@@ -1,0 +1,472 @@
+:root {
+  --navy: #2F4156;
+  --teal: #507C8D;
+  --beige: #F5EFEB;
+  --sky-blue: #C8D9E6;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--navy);
+  background-color: var(--beige);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex-grow-1 {
+  flex: 1;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ==================== BUTTONS ==================== */
+
+.btn-teal {
+  background-color: var(--teal);
+  color: var(--white);
+  border: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn-teal:hover {
+  background-color: #3c6472;
+  color: var(--white);
+}
+
+.btn-outline-light {
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--white);
+  color: var(--teal);
+}
+
+/* Main content */
+.main-content {
+  padding-top: 80px;
+}
+
+/* Hero Banner */
+.hero-banner {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.hero-banner > div {
+  position: relative;
+  z-index: 2;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+  background-color: var(--beige);
+}
+
+.section-padding {
+  padding: 5rem 0;
+}
+
+/* Card */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Feature Card */
+.feature-card {
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h5 {
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.row.three-cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.row.three-cols > .card-col {
+  flex: 1 1 calc(33.333% - 1rem);
+}
+
+/* Inputs */
+input.form-control,
+textarea.form-control {
+  border-radius: 8px;
+  border: 1px solid var(--sky-blue);
+  padding: 0.75rem 1rem;
+  transition: all 0.3s;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 5px rgba(80,124,141,0.4);
+  outline: none;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 2rem 0;
+  margin-top: auto;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer a {
+  color: var(--white);
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: var(--teal);
+}
+
+/* Social Icons */
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  margin: 0 8px;
+  transition: background-color 0.3s;
+  color: var(--white);
+}
+
+.social-icon:hover {
+  background-color: var(--teal);
+}
+
+.row.g-4 {
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+
+/* Text Colors */
+.text-navy {
+  color: var(--navy) !important;
+}
+
+.text-teal {
+  color: var(--teal) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 70vh;
+  }
+
+  .feature-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Adopt Details */
+.btn-radius {
+  border-radius: 5px; 
+}
+
+.adopt-detail-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.adopt-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.adopt-image img {
+  transition: transform 0.3s ease;
+}
+
+.adopt-image img:hover {
+  transform: scale(1.03);
+}
+
+.adopt-details p {
+  font-weight: 500;
+  font-size: 19px;
+}
+
+/* === Consistent Button Styling (Unified) === */
+.btn-teal,
+.btn-outline-teal {
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+/* Solid Teal Button */
+.btn-teal {
+  background-color: var(--teal);
+  color: var(--white);
+  border: 2px solid var(--teal);
+}
+
+.btn-teal:hover {
+  background-color: #3b6a7d;
+  border-color: #3b6a7d;
+  color: var(--white);
+}
+
+/* Outline Teal Button */
+.btn-outline-teal {
+  background-color: transparent;
+  color: var(--teal);
+  border: 2px solid var(--teal);
+}
+
+.btn-outline-teal:hover {
+  background-color: var(--teal);
+  color: var(--white);
+}
+
+/* Small button variant */
+.btn-sm {
+  padding: 0.35rem 0.9rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+/* Focus & Transition */
+button,
+.btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(80, 124, 141, 0.3);
+}
+
+
+/* Navbar link hover & active */
+.nav-link {
+  color: var(--navy);
+  font-weight: 500;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--teal);
+}
+
+.active-link {
+  color: var(--teal) !important;
+  border-bottom: 2px solid var(--teal);
+}
+
+/* Buttons */
+.btn-outline-navy {
+  border: 2px solid var(--navy);
+  color: var(--navy);
+  transition: 0.3s;
+}
+
+.btn-outline-navy:hover {
+  background-color: var(--navy);
+  color: white;
+}
+
+.btn-teal {
+  background-color: var(--teal);
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-teal:hover {
+  background-color: #3d6d79;
+}
+
+/* Adjust navbar spacing */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand span {
+  color: var(--teal);
+}
+
+/* ==================== NAVBAR ==================== */
+.navbar-default {
+  background-color: var(--white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+}
+
+.navbar-scrolled {
+  background-color: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.7rem 0;
+  transition: all 0.3s ease;
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand span {
+  color: var(--teal);
+}
+
+/* Links */
+.nav-link {
+  color: var(--navy);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  color: var(--teal);
+  background-color: rgba(80, 124, 141, 0.08);
+}
+
+.active-link {
+  color: var(--teal) !important;
+  background-color: rgba(59, 95, 109, 0.1);
+  border-radius: 6px;
+}
+
+/* Buttons */
+.btn-outline-navy {
+  border: 2px solid var(--navy);
+  color: var(--navy);
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-navy:hover {
+  background-color: var(--navy);
+  color: white;
+}
+
+.btn-teal {
+  background-color: var(--teal);
+  color: var(--white);
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-teal:hover {
+  background-color: #3c6675;
+  color: var(--white);
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none;
+  background-color: var(--sky-blue);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  background-color: var(--teal);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .nav-link {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-collapse {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
