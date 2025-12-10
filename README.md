@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+<h1>Adoptoverse - Pet Adoption & Products</h1>
+<p>Adoptoverse is a React-based web application that connects pet lovers with pets available for adoption, allows the purchase of pet products, and provides informative pet blogs. The app has both Admin and User sides with role-specific features.</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>Features</h2>
+<h3>Admin Side</h3>
+<ul>
+    <li>Add, edit, and remove pets available for adoption</li>
+    <li>Add, edit, and remove pet products</li>
+    <li>Create, edit, and remove blog posts</li>
+    <li>View users registered on the platform</li>
+    <li>View orders for products</li>
+    <li>See adoption requests users</li>
+    <li>See blogs comments and likes</li>
+</ul>
 
-## Available Scripts
+<h3>User Side</h3>
+<ul>
+    <li>Browse pets available for adoption</li>
+    <li>View products and categories for purchase</li>
+    <li>Submit adoption requests</li>
+    <li>Read, like, and comment on blog posts</li>
+    <li>Responsive and user-friendly interface</li>
+</ul>
 
-In the project directory, you can run:
+<h2>Project Structure</h2>
+<p><strong>Root Files:</strong></p>
+<ul>
+    <li><code>AdminFooter.js</code> - Footer component for admin pages</li>
+    <li><code>AdminHeader.js</code> - Header component for admin pages</li>
+    <li><code>AdminHome.js</code> - Admin dashboard home page</li>
+    <li><code>Login.js</code> - Login page for users and admin</li>
+    <li><code>Register.js</code> - User registration page</li>
+    <li><code>Order.js</code> - Admin view of product orders</li>
+    <li><code>ShowUser.js</code> - Admin view of registered users</li>
+    <li><code>ProtectedRoute.js</code> - Component to protect routes based on authentication</li>
+    <li><code>Style.css</code> - Global styles</li>
+</ul>
 
-### `npm start`
+<p><strong>Components Folder:</strong></p>
+<ul>
+    <li><code>adoption/</code> - Components related to pet adoption</li>
+    <li><code>blog/</code> - Components for displaying and interacting with blogs</li>
+    <li><code>category/</code> - Components for product categories</li>
+    <li><code>contact/</code> - Contact page components</li>
+    <li><code>product/</code> - Components for product listing and management</li>
+    <li><code>user/</code> - Components for user-specific pages and interactions</li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>Usage</h2>
+<p>Once the application is running:</p>
+<ol>
+    <li>Users can browse pets, products, and blogs.</li>
+    <li>Users can submit adoption requests and interact with blogs (like/comment).</li>
+    <li>Admins can manage all content including pets, products, blogs, users, orders, and adoption requests.</li>
+    <li>The interface is responsive and works on desktop and mobile devices.</li>
+</ol>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2>Technologies Used</h2>
+<ul>
+    <li>React (Functional Components, Hooks)</li>
+    <li>React Router for navigation</li>
+    <li>CSS / Bootstrap for styling</li>
+    <li>JSON Server (for backend simulation)</li>
+</ul>
 
-### `npm test`
+<h2>Future Enhancements</h2>
+<ul>
+    <li>Integration with a real backend for adoption and product management</li>
+    <li>User authentication and profile management</li>
+    <li>Payment gateway integration for product purchases</li>
+    <li>Wishlist and favorites functionality for pets and products</li>
+    <li>Advanced admin analytics for user activity and adoption trends</li>
+    <li>Home-based facilities for pet care and delivery</li>
+    <li>Integration with veterinary doctors for consultation</li>
+    <li>Online booking for pet services and healthcare</li>
+    <li>Push notifications for adoption updates, product deals, and blog posts</li>
+</ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2>Author</h2>
+<p>Developed by Heer Parikh</p>
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2>License</h2>
+<p>&copy; 2025 Heer Parikh. All rights reserved.</p>
